@@ -1,0 +1,40 @@
+body, html {
+  /* The image used */
+  background: url("https://cdn.pixabay.com/photo/2016/11/22/20/02/abstract-1850417_1280.jpg"); 
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;  
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  height: 100%;
+}
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  .autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+  }
